@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rightLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="371dp"
+        android:layout_height="271dp"
+        android:layout_weight="1.72"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/scan"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="98dp"
+            android:layout_height="139dp"
+            android:onClick="scanDevices"
+            android:text="List Paired Bluetooth Devices" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="99dp"
+            android:layout_height="160dp" />
+
+        <!--  <EditText
+              android:layout_width="1dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/editText"
+              android:layout_weight="1.50" /> -->
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="82dp"
+            android:layout_height="120dp"
+            android:onClick="listBinaryFiles"
+            android:text="List Available Hex Files" />
+
+        <ListView
+            android:id="@+id/binListView"
+            android:layout_width="84dp"
+            android:layout_height="160dp" />
+
+        <!--        <EditText
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Start Address"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:id="@+id/strtAdd"/>-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="374dp"
+        android:layout_height="1dip"
+        android:layout_weight="1.70"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <!--        <EditText
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/endAdd"
+            android:hint="Enter End Address"
+            android:layout_gravity="right" />-->
+
+        <Button
+            android:id="@+id/update"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Update Firmware" />
+
+
+    </LinearLayout>
+  </LinearLayout>
